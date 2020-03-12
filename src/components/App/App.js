@@ -1,9 +1,16 @@
 import React from 'react';
-import spacer from './Assets/spacer.gif';
-import logo from './Assets/logo.gif';
-import aspens from './Assets/aspens.jpg';
-import swirl from './Assets/swirl.gif';
+import spacer from '../../Assets/spacer.gif';
+import logo from '../../Assets/logo.gif';
+import aspens from '../../Assets/aspens.jpg';
+import swirl from '../../Assets/swirl.gif';
 import './App.scss';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
 
 function App() {
   return (
@@ -108,7 +115,7 @@ function App() {
           <tr bgcolor="#330000">
             <td height="35">&nbsp;</td>
             <td bgcolor="#330000" height="35">
-              <div class="style5" align="center">&copy; 2019 Cami Boyer&nbsp;&nbsp;&nbsp;<img src={swirl} align="absmiddle" width="60" />&nbsp;&nbsp;&nbsp;Licensed Professional Counselor, Licensed Addiction Counselor, Master Addictions Counselor</div>
+              <div class="style5" align="center">&copy; 2020 Cami Boyer&nbsp;&nbsp;&nbsp;<img src={swirl} align="absmiddle" width="60" />&nbsp;&nbsp;&nbsp;Licensed Professional Counselor, Licensed Addiction Counselor, Master Addictions Counselor</div>
             </td>
             <td height="35">&nbsp;</td>
           </tr>
