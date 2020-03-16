@@ -1,9 +1,11 @@
 import React from 'react';
 import spacer from '../../Assets/spacer.gif';
-import logo from '../../Assets/logo.gif';
+import Navigation from "../Navigation/Navigation";
 import aspens from '../../Assets/aspens.jpg';
-import swirl from '../../Assets/swirl.gif';
+
 import './App.scss';
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 import {
   BrowserRouter as Router,
   Switch,
@@ -17,67 +19,9 @@ function App() {
     <div className="App">
       <table className="table1">
         <tbody>
-          <tr bgcolor="#330000">
-            <td width="150"><img src={spacer} height="1" width="150" /></td>
-            <td bgcolor="#330000" height="45" width="876">&nbsp;</td>
-            <td>&nbsp;</td>
-          </tr>
-          <tr>
-            <td width="150"><img src={spacer} height="1" width="150" /></td>
-            <td><img src={spacer} height="2" /></td>
-            <td><img src={spacer} height="2" /></td>
-          </tr>
-          <tr bgcolor="#99cc33">
-            <td bgcolor="#99cc33" width="150"><img src={spacer} height="1" width="150" /></td>
-            <td bgcolor="#99cc33" height="45">
-              <table >
-                <tbody>
-                  <tr>
-                    <td>
-                      <div align="center"><img src={logo} height="136" width="534" /></div>
-                    </td>
-                    <td>
-                      <div class="style1" align="center">Licensed Psychotherapist<br />&nbsp;
-        4155 E Jewell Ave. Suite #225<br /> Denver, CO 80222<br /> 303-667-1627</div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </td>
-            <td bgcolor="#99cc33">&nbsp;</td>
-          </tr>
-          <tr>
-            <td width="150"><img src={spacer} height="1" width="150" /></td>
-            <td><img src={spacer} height="2" /></td>
-            <td><img src={spacer} height="2" /></td>
-          </tr>
-          <tr bgcolor="#330000">
-            <td height="33">&nbsp;</td>
-            <td height="33">
-              <table className="tableTwo">
-                <tbody>
-                  <tr>
-                    <td width="13%">
-                      <div align="center"><a href="index.htm" class="style4">HOME</a></div>
-                    </td>
-                    <td width="23%">
-                      <div align="center"><a href="about.htm" class="style4">ABOUT ME</a></div>
-                    </td>
-                    <td width="22%">
-                      <div align="center"><a href="services.htm" class="style4">SERVICES</a></div>
-                    </td>
-                    <td width="12%">
-                      <div align="center"><a href="faq.htm" class="style4">FAQ</a></div>
-                    </td>
-                    <td width="30%">
-                      <div align="center"><a href="contact.htm" class="style4">CONTACT ME</a></div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </td>
-            <td height="33">&nbsp;</td>
-          </tr>
+          <Header />
+          <Navigation />
+
           <tr>
             <td width="150"><img src={spacer} height="1" width="150" /></td>
             <td><img src={spacer} height="2" /></td>
@@ -112,13 +56,8 @@ function App() {
             </td>
             <td>&nbsp;</td>
           </tr>
-          <tr bgcolor="#330000">
-            <td height="35">&nbsp;</td>
-            <td bgcolor="#330000" height="35">
-              <div class="style5" align="center">&copy; 2020 Cami Boyer&nbsp;&nbsp;&nbsp;<img src={swirl} align="absmiddle" width="60" />&nbsp;&nbsp;&nbsp;Licensed Professional Counselor, Licensed Addiction Counselor, Master Addictions Counselor</div>
-            </td>
-            <td height="35">&nbsp;</td>
-          </tr>
+          <Footer />
+
         </tbody>
       </table>
 
