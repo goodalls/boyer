@@ -1,13 +1,13 @@
 import React from 'react';
-import './App.scss';
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
-import Home from '../Home/Home';
-import About from '../About/About';
-import Services from '../Services/Services';
-import FAQ from '../FAQ/FAQ';
-import Contact from '../Contact/Contact';
 import { Switch, Route, Link } from "react-router-dom";
+import Services from '../Services/Services';
+import Contact from '../Contact/Contact';
+import Footer from '../Footer/Footer';
+import Header from '../Header/Header';
+import About from '../About/About';
+import Home from '../Home/Home';
+import FAQ from '../FAQ/FAQ';
+import './App.scss';
 
 export default function App() {
   return (
